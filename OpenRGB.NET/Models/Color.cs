@@ -59,6 +59,10 @@ namespace OpenRGB.NET.Models
                 throw new ArgumentOutOfRangeException(nameof(value));
 
             int hi = Convert.ToInt32(Math.Floor(hue / 60)) % 6;
+            if (hi < 0)
+            {
+                hi += 6;
+            }
             double f = (hue / 60) - Math.Floor(hue / 60);
 
             value *= 255;
