@@ -26,6 +26,15 @@ namespace OpenRGB.NET.Models
         public byte B { get; set; }
 
         /// <summary>
+        /// Constructs a new color.
+        /// </summary>
+        public Color() {
+            R = 0;
+            G = 0;
+            B = 0;
+        }
+
+        /// <summary>
         /// Constructs a new color with the specified red, green, and blue values.
         /// </summary>
         public Color(byte red = 0, byte green = 0, byte blue = 0)
