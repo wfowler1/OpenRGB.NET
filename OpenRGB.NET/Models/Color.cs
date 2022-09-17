@@ -231,12 +231,11 @@ namespace OpenRGB.NET.Models
         /// </summary>
         /// <param name="c">The color.</param>
         /// <returns>The complement to <paramref name="c"/>.</returns>
-        public static Color Complement(Color c) {
-            return new Color(
+        public static Color Complement(Color c) =>
+            new Color(
                 (byte)(255 - c.R),
                 (byte)(255 - c.G),
                 (byte)(255 - c.B)
             );
-        }
     }
 }
