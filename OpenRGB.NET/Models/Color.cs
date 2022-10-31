@@ -242,6 +242,19 @@ namespace OpenRGB.NET.Models
             );
 
         /// <summary>
+        /// Sets this Color to the linear interpolation between <paramref name="a"/> and <paramref name="b"/> using
+        /// the value <paramref name="t"/>.
+        /// </summary>
+        /// <param name="a">First color</param>
+        /// <param name="b">Second Color</param>
+        /// <param name="t">Linear interpolation value, typically between 0 and 1.</param>
+        public void FromLerp(Color a, Color b, float t) {
+            R = (byte)(a.R + ((b.R - a.R) * t));
+            G = (byte)(a.G + ((b.G - a.G) * t));
+            B = (byte)(a.B + ((b.B - a.B) * t));
+        }
+
+        /// <summary>
         /// Gets the color complement of <paramref name="c"/>, where <paramref name="c"/> and the result added
         /// together will be white (R=G=B=255). In other words, the result will have hue rotated 180 degrees
         /// with the same saturation.
