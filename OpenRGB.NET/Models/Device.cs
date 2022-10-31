@@ -8,7 +8,7 @@ namespace OpenRGB.NET.Models
     /// <summary>
     /// Device class containing all the info present in an OpenRGB RGBController
     /// </summary>
-    public class Device
+    public sealed class Device
     {
         /// <summary>
         /// The owning OpenRGBClient of the device.

@@ -7,7 +7,7 @@ namespace OpenRGB.NET.Models
     /// <summary>
     /// Led class containing the name of the LED
     /// </summary>
-    public class Led
+    public sealed class Led
     {
         /// <summary>
         /// The name of the led.

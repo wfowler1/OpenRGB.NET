@@ -8,7 +8,7 @@ namespace OpenRGB.NET.Models
     /// <summary>
     /// Zone class containing the name, type and size of a Zone.
     /// </summary>
-    public class Zone
+    public sealed class Zone
     {
         /// <summary>
         /// The owning OpenRGBClient of the device.

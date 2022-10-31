@@ -8,7 +8,7 @@ namespace OpenRGB.NET.Models
     /// <summary>
     /// Color class containing three values for red, green and blue.
     /// </summary>
-    public class Color : IEquatable<Color>
+    public sealed class Color : IEquatable<Color>
     {
         /// <summary>
         /// Red value of the color.

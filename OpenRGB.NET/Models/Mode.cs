@@ -7,7 +7,7 @@ namespace OpenRGB.NET.Models
     /// <summary>
     /// Mode class containing the parameters one mode has.
     /// </summary>
-    public class Mode
+    public sealed class Mode
     {
         /// <summary>
         /// The name of the mode.

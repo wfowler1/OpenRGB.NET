@@ -7,7 +7,7 @@ namespace OpenRGB.NET.Models
     /// <summary>
     /// Matrix Map class for the matrix Zone type
     /// </summary>
-    public class MatrixMap
+    public sealed class MatrixMap
     {
         /// <summary>
         /// The height of the matrix.
