@@ -25,6 +25,23 @@ namespace OpenRGB.NET.Models
         /// </summary>
         public byte B { get; set; }
 
+        public float Luminance
+        {
+            get => Color2Linear(R) * 0.2126f + Color2Linear(G) * 0.7152f + Color2Linear(B) * 0.0722f;
+        }
+
+        private float Color2Linear(float val)
+        {
+            if (val <= 10.31475)
+            {
+                return val / 3294.6f;
+            }
+            else
+            {
+                return (float)Math.Pow((val + 14.025) / 269.025, 2.4);
+            }
+        }
+
         /// <summary>
         /// Constructs a new color.
         /// </summary>
